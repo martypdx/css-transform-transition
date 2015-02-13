@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>luffy flying in a box</title>
+
+	<style>
+		body.loading #box {
+			transform: translate3d(-1000px, 100px, 0);
+		}
+
+		#box {
+			position: absolute;
+			height: 200px;
+			width: 300px;
+
+			background-image: url(images/luffy.jpeg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 80%;
+
+			background-color: lightsteelblue;
+
+			border: 1px solid steelblue;
+
+			transition: transform 500ms cubic-bezier(.78,1.87,.84,.63);
+			transform: translate3d(100px, 100px, 0);
+		}
+	</style>
+
+</head>
+
+<body class='loading' onload='document.body.classList.remove("loading");'>
+
+	<div id='box'></div>
+
+	<!--
+	<button onclick='document.getElementById("box").style.transform="translate3d(200px, 300px, 0)";'>move</button>
+	-->
+
+</body>
+
+</html>

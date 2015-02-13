@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>collapse expand</title>
+
+	<style>
+
+		ul {
+			font-family: sans-serif;
+			list-style: none;
+		}
+
+		li {
+			margin: 10px;
+		}
+
+		label {
+			cursor: pointer;
+			font-size: 20pt;
+		}
+
+		input {
+			display: none;
+		}
+
+		span {
+			display: inline-block;
+			font-size: 12pt;
+			color: darkgrey;
+			transition: all 500ms ease-in-out;
+		}
+
+		input:checked + span {
+			transform: rotate(90deg);
+			color: black;
+		}
+
+
+		section {
+			background: #aaa;
+			transition: max-height 500ms ease-in-out;
+			overflow: hidden;
+
+			max-height: 0px;
+		}
+
+		p {
+			margin: 10px;
+			font-size: initial;
+		}
+
+		input:checked ~ section {
+			max-height: 200px;
+		}
+
+		a {
+			position: absolute;
+			bottom: 5px;
+		}
+
+
+
+	</style>
+
+</head>
+
+<body>
+	<ul>
+		<li>
+			<label><input type='checkbox'>
+				<span>▶</span> One
+				<section>
+					<p>Four loko Brooklyn flannel YOLO narwhal, VHS small batch Neutra tofu before they sold out. Farm-to-table raw denim plaid, trust fund tote bag hashtag Echo Park hella Kickstarter PBR brunch post-ironic organic migas four dollar toast. Four dollar toast normcore pickled yr tattooed you probably haven't heard of them, bespoke tilde Williamsburg pork belly raw denim wayfarers Intelligentsia stumptown. Gentrify American Apparel meggings, Odd Future pork belly distillery locavore XOXO trust fund gastropub Banksy.</p>
+				</section>
+			</label>
+		<li>
+			<label><input type='checkbox'>
+				<span>▶</span> Two
+				<section>
+					<p>You probably haven't heard of them cold-pressed bespoke Carles, Shoreditch semiotics gentrify. Viral Brooklyn chillwave, health goth flannel Echo Park asymmetrical farm-to-table Pitchfork McSweeney's hella pop-up retro yr. Four loko whatever wolf leggings, chia four dollar toast ethical twee pickled letterpress salvia cardigan readymade vegan.</p>
+				</section>
+			</label>
+		<li>
+			<label><input type='checkbox'>
+				<span>▶</span> Three
+				<section>
+					<p>Listicle 3 wolf moon Schlitz, locavore tattooed sriracha migas four loko mustache. High Life chia street art fashion axe, blog art party tattooed cray food truck 90's freegan raw denim PBR&B synth. Intelligentsia seitan vegan, chambray tote bag Neutra Blue Bottle Austin mixtape salvia banh mi Tumblr forage migas lomo. Locavore lo-fi 3 wolf moon stumptown readymade, fingerstache photo booth Austin. Migas pour-over cred put a bird on it Helvetica, four dollar toast bitters Williamsburg jean shorts quinoa. Lo-fi occupy biodiesel post-ironic 3 wolf moon. Organic chambray banjo raw denim tofu, lomo mumblecore selfies ethical vinyl Bushwick</p>
+				</section>
+			</label>
+
+
+    <a href='http://hipsum.co/'>hipsum</a>
+</body>
+
+</html>
