@@ -93,7 +93,10 @@ simple `:hover` example
 
 ### duration and delay
 
-units `ms` or `s`
+* units `ms` or `s`
+* delay
+	* tone-down jumpy ui
+	* stager multiple effects
 
 ### easing
 
@@ -125,4 +128,7 @@ Allows child elements to participate in parent "space"
 transform-style: preserve-3d;
 ```
 
+## css `@keyframe and animation`
 
+* define `@keyframes`
+* apply using `animation`
