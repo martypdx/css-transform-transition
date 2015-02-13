@@ -109,8 +109,20 @@ or [here](http://matthewlein.com/ceaser/))
 
 ## css `3d`
 
-### css `perspective: 800`
+### css `perspective`
 
-### css `transform-style: preserve-3d`;
+Creates a 3d "space"
+
+```css
+perspective: 800;
+```
+
+### css `transform-style`
+
+Allows child elements to participate in parent "space"
+
+```css
+transform-style: preserve-3d;
+```
 
 
