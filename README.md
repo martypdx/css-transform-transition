@@ -1,10 +1,13 @@
 
 # css `transform` and `transition`
 
+https://github.com/martypdx/css-transform-transition
+
 ## background/refresher
 
 * css is declarative appearance
 * selector and styles
+* specificity
 
 ## demo
 
@@ -41,7 +44,7 @@
 	* `rotate(30deg)`
 	* `scale(1.25)`
 
-* any web content
+* any web content (not just images) `<input>`
 
 ### css `transform-origin`
 
@@ -61,6 +64,7 @@ values:
 	* use these for layout
 * it is a single style value!
 * order matters!
+* numeric only - has to have a value
 * scale does not compensate for images
 
 ### ** modern browsers
