@@ -3,6 +3,13 @@
 	<title>luffy in a box</title>
 
 	<style>
+		.box:hover {
+			transform: scale(1.5);
+			opacity: 1.0;
+
+
+		}
+
 		.box {
 			position: absolute;
 			height: 200px;
@@ -17,16 +24,23 @@
 
 			border: 1px solid steelblue;
 
-			/*
+			transform: scale(.75);
+			opacity: 0.5;
+
 			text-align: center;
-			*/
+
+			transition:
+				all 500ms cubic-bezier(.52,1.91,.62,.59);
+
+
 		}
+
 	</style>
 
 </head>
 
 <body>
-	<div class='box'><!--<input value='luffy'>--></div>
+	<div class='box'><input value='luffy'></div>
 </body>
 
 </html>
