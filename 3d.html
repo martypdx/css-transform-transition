@@ -5,21 +5,31 @@
 	<style>
 
 		#space {
-		    position: absolute;
-		    bottom: 20px; top: 45px;
-		    right: 20px; left: 20px;
-		    perspective: 800;
-		    overflow: hidden;
-		    border: 1px solid #aaa;
+			position: absolute;
+			bottom: 20px; top: 45px;
+			right: 20px; left: 20px;
+			perspective: 800px;
+			overflow: hidden;
+			border: 1px solid #aaa;
 		}
 
-		.floor {
+		.floor, .wall {
 			position: absolute;
 			bottom: 0; right: 0; left: 0;
 			height: 600px;
 			background-color: grey;
+    	transform-style: preserve-3d;
+			border: 1px solid gold
+		}
+		
+		.wall {
+			transform: rotateY(90deg);
+		  transform-origin: 0 0;
+		}
+		
+		.floor {
 			transform: rotateX(90deg);
-		    transform-origin: 0 100%;
+		  transform-origin: 0 100%;
 		}
 
 		.box {
@@ -33,13 +43,27 @@
 			background-size: 80%;
 
 			background-color: lightsteelblue;
-
 			border: 1px solid steelblue;
-
 			transition: all 300ms;
+    	transform-style: preserve-3d;
+			
+			transform: translate3d(100px, 100px, 1px);
+		}
 
+		.wall .box {
+		  transform-origin: 0 0;
+		}
 
-    		/*transform-style: preserve-3d;*/
+		.floor .box {
+		  transform-origin: 0 100%;
+		}
+
+		.wall:hover .box {
+			transform: translate3d(100px, 100px, 1px) rotateY(-90deg);
+		}
+
+		.floor:hover .box {
+			transform: translate3d(100px, 100px, 1px) rotateX(-90deg);
 		}
 
 	</style>
@@ -48,10 +72,12 @@
 
 <body>
 
-	<div id='space'>
-		<div class='box' style='transform: translate3d(100px,100px,0px);'></div>
-		<div class='floor'>
-
+	<div id="space">
+		<div class="wall">
+			<div class="box"></div>
+		</div>
+		<div class="floor">
+			<div class="box"></div>
 		</div>
 	</div>
 
